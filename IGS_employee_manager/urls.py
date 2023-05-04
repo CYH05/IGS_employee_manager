@@ -20,5 +20,6 @@ from api.urls import urlpatterns as ApiUrlPatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(ApiUrlPatterns))
+    path('', include(ApiUrlPatterns)),
+    path('', include('core.urls')),
 ]
